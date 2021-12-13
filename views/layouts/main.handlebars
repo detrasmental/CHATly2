@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHATly</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<div class="topnav">
+   
+        <a class="active" href="/">CHATly</a>
+        <nav class="navbar mt-2">
+            {{#if loggedIn}}
+            <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">dashboard</a>
+            <button id="logout" class="button is-danger">logout</button>
+            {{else}}
+            {{!-- <a href="/" class="navbar-item is-hoverable pt-1">signup</a> --}}
+            <a href="/login" class="button is-primary">login</a>
+            {{/if}}
+        </div>
+    
+
+    <main>
+      {{{ body }}}
+    </main>
+    {{!-- <footer>
+      Thanks for visiting!
+    </footer> --}}
+  </div>
+<script src="/javascript/logout.js"></script>
+</body>
+
+</html>

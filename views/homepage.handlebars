@@ -1,0 +1,53 @@
+ <div class="join-container">
+			<header class="join-header">
+				<h1> CHATly</h1>
+			</header>
+			<main class="join-main">
+                    <div class="nameInput">
+                        <div class="field">
+                            {{!-- <label>First Name</label>
+                            <input type="text" placeholder="First Name" name="firstname"
+                            required />
+                        </div>
+                        <div class="field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name"
+                            required />
+                        </div> --}}
+					<div class="field">
+                        <label>Email Address</label>
+                        <input type="text" placeholder="Enter your email address"
+                        required />
+                    </div>
+                    <form action="chat.html" method="get">
+                    <div class="form-control">
+						<label for="username-signup">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username-signup"
+							placeholder="Enter username..."
+							required
+						/>
+                        </div>
+                     <div class="field">
+                          <label for="password-login">password:</label>
+                          <input type="password" id="password-login" 
+                        required />
+                    </div>
+            
+                    <div class="form-control">
+						<label for="room-name">Choose a Room</label>
+						<select name="room-name" id="room-name">
+							<option value="Azeroth">Azeroth</option>
+							<option value="Shadowlands">Shadowlands</option>
+							<option value="Pandaria">Pandaria</option>
+						</select>
+					</div>
+                    
+					<button type="submit" class="btn">Join CHATly</button>
+            </form>
+        </section>
+    </div>
+
+{{!-- <script type="text/javascript" src="/javascript/signup.js"></script> --}}

@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>CHATly</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+
+    </head>
+<body>
+      <!-- navigation -->
+      <div class="topnav">
+  <a class="active" href="./index.html">CHATly</a>
+  <!-- <a href="login.html">Login</a> -->
+  <a href="/signup">Create Account</a>
+  <a href="/login">Login</a>
+  <!-- <a href="/logout">Logout</a> -->
+
+  <!-- <a href="#logout">Logout</a>
+  <a href="\dashboard">About</a> -->
+</div>
+    <div class="join-container">
+			<header class="join-header">
+				<h1> CHATly</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+                    <div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+
+                    <!-- <div class="nameInput">
+                        <div class="field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name" name="firstname"
+                            required />
+                        </div>
+                        <div class="field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Last Name"
+                            required />
+                        </div>-->
+					<div class="field">
+                        <label for="email-login">Email Address</label>
+                        <input type="text" id="email-login" placeholder="Enter your email address"
+                        required />
+                    </div> 
+                    <div class="field">
+                        <label for="password-login">Password:</label>
+                        <input type="password" id="password-login" placeholder="Enter a new password"
+                        required />
+                    </div>
+                    <div class="field">
+						<label for="room">Choose a Room</label>
+						<select name="room" id="room">
+							<option value="Azeroth">Azeroth</option>
+							<option value="Shadowlands">Shadowlands</option>
+							<option value="Pandaria">Pandaria</option>
+						</select>
+					</div>
+                    
+					<button type="submit" class="btn">Join CHATly</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
